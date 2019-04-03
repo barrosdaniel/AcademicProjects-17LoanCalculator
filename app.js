@@ -5,6 +5,7 @@ document
 
 // Calculate results
 function calculateResults(e) {
+  e.preventDefault();
   console.log("Calculating");
   const amount = document.getElementById("amount");
   const interest = document.getElementById("interest");
@@ -20,7 +21,6 @@ function calculateResults(e) {
   // Compute monthly payment
   const x = Math.pow(1 + calculatedInterest, calculatedPayments);
   const monthly = (principal * x * calculatedInterest) / (x - 1);
-  console.log(monthly);
 
   if (isFinite(monthly)) {
     monthlyPayment.value = monthly.toFixed(2);
@@ -29,8 +29,6 @@ function calculateResults(e) {
   } else {
     showError("Please check your numbers.");
   }
-
-  e.preventDefault();
 }
 
 function showError(error) {
@@ -49,4 +47,11 @@ function showError(error) {
 
   // Insert before heading
   card.insertBefore(errorDiv, heading);
+
+  // Clear error after 3s
+  setTimeout(clearError, 3000);
+}
+
+function clearError() {
+  document.querySelector(".alert").remove();
 }
