@@ -30,14 +30,16 @@
               <div class="form-group">
                 <div class="input-group">
                   <div class="input-group-prepend">
-                    <div class="input-group-text">$</div>
+                    <div class="input-group-text">
+                      <span class="label">Loan amount</span
+                      ><span class="symbol">$</span>
+                    </div>
                   </div>
                   <input
                     class="form-control"
                     type="text"
                     name="amount"
                     id="amount"
-                    placeholder="Loan amount..."
                   />
                 </div>
               </div>
@@ -45,25 +47,33 @@
               <div class="form-group">
                 <div class="input-group">
                   <div class="input-group-prepend">
-                    <div class="input-group-text">%</div>
+                    <div class="input-group-text">
+                      <span class="label">Interest rate</span
+                      ><span class="symbol">%</span>
+                    </div>
                   </div>
                   <input
                     class="form-control"
                     type="text"
                     name="interest"
                     id="interest"
-                    placeholder="Loan interest..."
                   />
                 </div>
               </div>
               <div class="form-group">
-                <input
-                  class="form-control"
-                  type="number"
-                  name="years"
-                  id="years"
-                  placeholder="Years to repay..."
-                />
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <span class="label">Years to repay</span>
+                    </div>
+                  </div>
+                  <input
+                    class="form-control"
+                    type="number"
+                    name="years"
+                    id="years"
+                  />
+                </div>
               </div>
 
               <div class="form-group">
@@ -85,14 +95,16 @@
               <div class="form-group">
                 <div class="input-group">
                   <div class="input-group-prepend">
-                    <div class="input-group-text">Monthly payment $</div>
+                    <div class="input-group-text">
+                      <span class="label">Monthly payment</span
+                      ><span class="symbol">$</span>
+                    </div>
                   </div>
                   <input
                     class="form-control"
                     type="text"
                     name="monthly-payment"
                     id="monthly-payment"
-                    value="Monthly payment"
                     disabled
                   />
                 </div>
@@ -100,14 +112,16 @@
               <div class="form-group">
                 <div class="input-group">
                   <div class="input-group-prepend">
-                    <div class="input-group-text">Total payment $</div>
+                    <div class="input-group-text">
+                      <span class="label">Total payment</span
+                      ><span class="symbol">$</span>
+                    </div>
                   </div>
                   <input
                     class="form-control"
                     type="text"
                     name="monthly-payment"
                     id="total-payment"
-                    value="Total payment"
                     disabled
                   />
                 </div>
@@ -115,14 +129,16 @@
               <div class="form-group">
                 <div class="input-group">
                   <div class="input-group-prepend">
-                    <div class="input-group-text">Total interest $</div>
+                    <div class="input-group-text">
+                      <span class="label">Total interest</span
+                      ><span class="symbol">$</span>
+                    </div>
                   </div>
                   <input
                     class="form-control"
                     type="text"
                     name="monthly-payment"
                     id="total-interest"
-                    value="Total interest"
                     disabled
                   />
                 </div>

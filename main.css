@@ -2,3 +2,17 @@
 #results {
   display: none;
 }
+
+.input-group-prepend {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-group-text {
+  width: 100%;
+}
+
+.symbol {
+  margin-left: auto;
+}
